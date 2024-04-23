@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAT BOT BY RAHUL</title>
+    <style>
+        *{font-size: 30px;font-family: 'Courier New', Courier, monospace;}
+        body{background-color: aquamarine;
+
+        }
+        textarea{resize: none;}
+    </style>
+</head>
+<body>
+    <center>
+        <h1>CHATBOT BY RAHUL</h1>
+        <form method="POST">
+            <textarea name="tc" rows="10" cols="70" id="ta">{{tc}}</textarea>
+            <br><br>
+            <input type="text" name ="qts" placeholder="enter qts " id="qts"/>
+            <br><br>
+            <input type="submit" />
+        </form>
+        <script>
+            let qts = document.getElementById("qts");
+            qts.focus();
+            let ta  = document.getElementById("ta");
+            ta.scrollTop= ta.scrollHeight;
+        </script>
+    </center>
+</body>
+</html>
